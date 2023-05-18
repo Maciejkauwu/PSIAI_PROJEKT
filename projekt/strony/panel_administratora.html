@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="all.css">
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+</head>
+<body>
+    <header>
+        <h1>Hotelik u Henia</h1>
+        <nav>
+            <a href="login.html">Login</a> 
+            <a href="signup.html">Signup</a>
+            <a href="main.html">Główna</a>
+            <a href="platnosc.html">płatność</a>
+        </nav>
+    </header>
+    <div name="dodaj_pokoj">
+
+    </div>
+
+    <div name="uprawnienia">
+
+        <form action="" method="post">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <br>
+            <label for="admin">Uprawnienia Administratora:</label>
+            <select name="admin" required>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            <br><br>
+            <input type="submit" name="Zmień uprawnienia" value="Update">
+        </form>
+
+    </div>
+
+    <div name="metody_platnosci">
+
+        <form>
+            <label for="metoda">Nazwa metody płatności:</label>
+            <input type="text" name="metoda"><br>
+
+            <input type="submit" value="Dodaj">
+        </form>
+    </div>
+
+    <div name="rezerwacje">
+        <table>
+            <tr>
+                <th>Data przyjazdu</th>
+                <th>Data wyjazdu</th>
+                <th>Liczba osób</th>
+                <th>Numer pokoju</th>
+                <th>Usuń rezerwacje</th>
+            </tr>
+        </table>
+        <!--php'owska magia z tabelką, będzie sie wyświetlać każda rezerwacja zrobiona,
+             obok guzik do usunięcia jej-->
+    </div>
+    <footer>
+        <h2>Stronę Hotelik u Henia opracowali: Wiktoria Kruk, Mateusz Kot, Cyprian Głowacki i Maciej Korowacki</h2>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="all.css">
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opis Pokoju</title>
+</head>
+<body>
+    <header>
+        <h1>Hotelik u Henia</h1>
+        <nav>
+            <a href="login.html">Wyloguj</a> 
+            <a href="main.html">Strona Główna</a>
+            <a href="twoje_rezerwacje.html">Twoje rezerwacje</a>
+        </nav>
+    </header>
+
+    <div class="opis">
+        <figure>
+            <img src="" alt=""> <!--jakos php chyba da sie zrobic zeby nazwa szukanego pliku zmieniła sie z obraz1.jpg na obraz2.jpg, conie natan <3-->
+        </figure>
+        <table>
+            <tr>
+              <th>Pokój</th>
+              <th>Cena za 24h/os</th>
+              <th>Liczba łóżek</th>
+              <th>Liczba łazieniek</th>
+              <th>Rozmiar w m^2</th>
+              <th>Możliwość pobytu ze zwierzęciem</th>
+              <th>Dotatkowe informacje</th>
+            </tr>
+            <!--tu idzie php, tak jak na mainie, ściągasz z bazy danych dane pokoju po id wybranego w mainie-->
+          </table>
+    
+    </div>
+
+    <div name="cena">
+
+        <form>
+            <label for="poczatek">Data przyjazdu:</label>
+            <input type="date" name="poczatek">
+
+            <lable for="koniec">Data wyjazdu:</lable>
+            <input type="date" name="koniec">
+
+            <label for="no_osob">Liczba osób</label>
+            <input type="number" name="no_osob">
+
+            <label for="zwierzeta">Czy zwierzęta?</label>
+            <input type="checkbox" name="zwierzeta">
+
+            <input type="submit" value="submit" name="Sprawdź Cenę!">
+        </form>
+
+        <table>
+            <tr>
+                <th>HotelNazwa</th>
+                <th>Liczba dni</th>
+                <th>Liczba osób</th>
+                <th>Czy Zwierzęta?</th>
+                <th>Wymarzony Pokój już od:</th>
+            </tr>
+            <!--kalkulator php ktory to wyliczy i ładnie przeklepie z fdormularza do tabeli-->
+        </table>
+    </div>
+
+    <div name="rezerwuj">
+        <!--duzy zielony guzik rezerwuj ^^ -->
+        <input type="submit" value="submit" name="REZERWUJ JUŻ TERAZ">
+        <!-- jesli pokoj nie jest wolny w tym terminie to niech jakis error message sie wyswietli na gorze strony albo w jego miejscu
+        Po kliknieciu przenosi do płatności-->
+    </div>
+    <footer>
+        <h2>Stronę Hotelik u Henia opracowali: Wiktoria Kruk, Mateusz Kot, Cyprian Głowacki i Maciej Korowacki</h2>
+    </footer>
+</body>
+</html>
