@@ -1,0 +1,122 @@
+/* opis_pokoju.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.container {
+  margin: 20px;
+}
+
+.opis {
+  margin-bottom: 20px;
+}
+
+.opis figure {
+  text-align: center;
+}
+
+.opis img {
+  width: 300px;
+  height: auto;
+}
+
+.opis table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.opis th,
+.opis td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cena {
+  margin-bottom: 20px;
+}
+
+.cena form {
+  margin-bottom: 10px;
+}
+
+.cena label,
+.cena input[type="submit"] {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.rezerwuj {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Opis Pokoju styles */
+.opis h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.opis table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.opis table td {
+  text-align: center;
+}
+
+.cena input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.cena input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.rezerwuj input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.rezerwuj input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  .opis img {
+    width: 100%;
+  }
+}
