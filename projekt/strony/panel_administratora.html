@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin panel</title>
+    <title>Admin panel - Sleepspace</title>
 </head>
 <body>
     <header>
-        <h1>Hotelik u Henia</h1>
+        <h1>Sleepspace</h1>
         <nav>
             <a href="login.html">Login</a> 
             <a href="signup.html">Signup</a>
@@ -17,9 +17,44 @@
             <a href="platnosc.html">płatność</a>
         </nav>
     </header>
-    <div name="dodaj_pokoj">
-
-    </div>
+ <div class="opis">
+    <figure>
+        <img src="" alt="">
+    </figure>
+    <table>
+        <tr>
+            <th>Pokój</th>
+            <th>Cena za 24h/os</th>
+            <th>Liczba łóżek</th>
+            <th>Liczba łazienek</th>
+            <th>Rozmiar w m^2</th>
+            <th>Możliwość pobytu ze zwierzęciem</th>
+            <th>Dodatkowe informacje</th>
+        </tr>
+        <!-- Tu idzie kod PHP, który pobiera dane o pokoju z bazy danych i generuje wiersze tabeli -->
+        <?php
+        // Przykładowe dane z bazy danych
+        $pokoj = [
+            "pokoj" => "Standardowy",
+            "cena" => "100 zł",
+            "lozka" => 2,
+            "lazienki" => 1,
+            "rozmiar" => 20,
+            "zwierzeta" => "Tak",
+            "dodatkowe_informacje" => "Widok na morze"
+        ];
+        ?>
+        <tr>
+            <td><?php echo $pokoj["pokoj"]; ?></td>
+            <td><?php echo $pokoj["cena"]; ?></td>
+            <td><?php echo $pokoj["lozka"]; ?></td>
+            <td><?php echo $pokoj["lazienki"]; ?></td>
+            <td><?php echo $pokoj["rozmiar"]; ?> m^2</td>
+            <td><?php echo $pokoj["zwierzeta"]; ?></td>
+            <td><?php echo $pokoj["dodatkowe_informacje"]; ?></td>
+        </tr>
+    </table>
+</div>
 
     <div name="uprawnienia">
 
@@ -62,7 +97,7 @@
              obok guzik do usunięcia jej-->
     </div>
     <footer>
-        <h2>Stronę Hotelik u Henia opracowali: Wiktoria Kruk, Mateusz Kot, Cyprian Głowacki i Maciej Korowacki</h2>
+        <p>&copy; 2023 Sleepscape.</p>
     </footer>
 </body>
 </html>
