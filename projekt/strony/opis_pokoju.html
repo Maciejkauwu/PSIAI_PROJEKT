@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opis Pokoju</title>
+    <title>Opis Pokoju - Sleepspace</title>
+    <link rel="stylesheet" href="../css/opis_pokoju.css">
 </head>
 <body>
     <header>
@@ -19,39 +20,37 @@
 
     <div class="opis">
         <figure>
-            <img src="" alt=""> <!--jakos php chyba da sie zrobic zeby nazwa szukanego pliku zmieniła sie z obraz1.jpg na obraz2.jpg, conie natan <3-->
+            <img src="" alt=""> <!-- jakos php chyba da sie zrobic zeby nazwa szukanego pliku zmieniła sie z obraz1.jpg na obraz2.jpg -->
         </figure>
         <table>
             <tr>
-              <th>Pokój</th>
-              <th>Cena za 24h/os</th>
-              <th>Liczba łóżek</th>
-              <th>Liczba łazieniek</th>
-              <th>Rozmiar w m^2</th>
-              <th>Możliwość pobytu ze zwierzęciem</th>
-              <th>Dotatkowe informacje</th>
+                <th>Pokój</th>
+                <th>Cena za 24h/os</th>
+                <th>Liczba łóżek</th>
+                <th>Liczba łazienek</th>
+                <th>Rozmiar w m^2</th>
+                <th>Możliwość pobytu ze zwierzęciem</th>
+                <th>Dodatkowe informacje</th>
             </tr>
-            <!--tu idzie php, tak jak na mainie, ściągasz z bazy danych dane pokoju po id wybranego w mainie-->
-          </table>
-    
+            <!-- tu idzie php, tak jak na stronie głównej, ściągasz z bazy danych dane pokoju po id wybranym na stronie głównej -->
+        </table>
     </div>
 
-    <div name="cena">
-
+    <div class="cena">
         <form>
             <label for="poczatek">Data przyjazdu:</label>
             <input type="date" name="poczatek">
 
-            <lable for="koniec">Data wyjazdu:</lable>
+            <label for="koniec">Data wyjazdu:</label>
             <input type="date" name="koniec">
 
-            <label for="no_osob">Liczba osób</label>
+            <label for="no_osob">Liczba osób:</label>
             <input type="number" name="no_osob">
 
             <label for="zwierzeta">Czy zwierzęta?</label>
             <input type="checkbox" name="zwierzeta">
 
-            <input type="submit" value="submit" name="Sprawdź Cenę!">
+            <input type="submit" value="Sprawdź Cenę!" name="submit">
         </form>
 
         <table>
@@ -62,18 +61,19 @@
                 <th>Czy Zwierzęta?</th>
                 <th>Wymarzony Pokój już od:</th>
             </tr>
-            <!--kalkulator php ktory to wyliczy i ładnie przeklepie z fdormularza do tabeli-->
+            <!-- kalkulator php, który obliczy i wyświetli wynik na podstawie danych z formularza -->
         </table>
     </div>
 
-    <div name="rezerwuj">
-        <!--duzy zielony guzik rezerwuj ^^ -->
-        <input type="submit" value="submit" name="REZERWUJ JUŻ TERAZ">
-        <!-- jesli pokoj nie jest wolny w tym terminie to niech jakis error message sie wyswietli na gorze strony albo w jego miejscu
-        Po kliknieciu przenosi do płatności-->
+    <div class="rezerwuj">
+        <!-- duży zielony przycisk "Rezerwuj już teraz" -->
+        <input type="submit" value="REZERWUJ JUŻ TERAZ" name="rezerwuj">
+        <!-- jeśli pokój nie jest dostępny w danym terminie, wyświetl jakiś komunikat błędu na górze strony lub w jego miejsce -->
+        <!-- Po kliknięciu przekieruj do płatności -->
     </div>
+
     <footer>
-        <h2>Stronę Hotelik u Henia opracowali: Wiktoria Kruk, Mateusz Kot, Cyprian Głowacki i Maciej Korowacki</h2>
+        <p>&copy; 2023 Sleepscape.</p>
     </footer>
 </body>
 </html>
