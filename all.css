@@ -1,0 +1,30 @@
+body
+{
+    text-align: center;
+    background-color: darkgrey;
+}
+table
+{
+    border: 3px;
+    border-color: red;
+    text-align: center;
+
+}
+nav
+{
+    background-color: #0544e6;
+    font-size: 25px;
+    margin-bottom: 30px;
+    min-height: 40px;
+    line-height: 200%;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right:1px dashed red;
+
+}
