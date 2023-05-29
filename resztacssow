@@ -1,0 +1,539 @@
+/* opis_pokoju.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.container {
+  margin: 20px;
+}
+
+.opis {
+  margin-bottom: 20px;
+}
+
+.opis figure {
+  text-align: center;
+}
+
+.opis img {
+  width: 300px;
+  height: auto;
+}
+
+.opis table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.opis th,
+.opis td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cena {
+  margin-bottom: 20px;
+}
+
+.cena form {
+  margin-bottom: 10px;
+}
+
+.cena label,
+.cena input[type="submit"] {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.rezerwuj {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Opis Pokoju styles */
+.opis h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.opis table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.opis table td {
+  text-align: center;
+}
+
+.cena input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.cena input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.rezerwuj input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.rezerwuj input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  .opis img {
+    width: 100%;
+  }
+}
+//////////////////////
+/* login.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+///////////////////
+body {
+  font-family: Arial, sans-serif;
+  }
+  
+  .container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  }
+  
+  header {
+  background-color: #001a33;
+  color: #fff;
+  padding: 20px;
+  }
+  
+  nav {
+  margin-top: 10px;
+  }
+  
+  nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  }
+  
+  footer {
+  background-color: #001a33;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  }
+  
+  /* Login Page */
+  .login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  }
+  
+  .login-container h2 {
+  margin-bottom: 20px;
+  }
+  
+  .login-container label {
+  display: block;
+  margin-bottom: 5px;
+  }
+  
+  .login-container input[type="email"],
+  .login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  }
+  
+  .login-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #001a33;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+  
+  /* Main Page */
+  .container_main {
+  margin: 20px auto;
+  max-width: 600px;
+  }
+  
+  .container_main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .container_main form label {
+  display: block;
+  margin-bottom: 10px;
+  }
+  
+  .container_main form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  }
+  
+  .container_main form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #001a33;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+  
+  .tabela_main {
+  margin-top: 20px;
+  }
+  
+  .tabela_main table {
+  width: 100%;
+  border-collapse: collapse;
+  }
+  
+  .tabela_main th,
+  .tabela_main td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .tabela_main th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  }
+  
+  .container_main input[type="submit"] {
+  margin-top: 10px;
+  }
+  
+  /* Signup Page */
+  .signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  }
+  
+  .signup-container h2 {
+  margin-bottom: 20px;
+  }
+  
+  .signup-container label {
+  display: block;
+  margin-bottom: 5px;
+  }
+  
+  .signup-container input[type="text"],
+  .signup-container input[type="email"],
+  .signup-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  }
+  
+  .signup-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #001a33;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+  
+  /* Twoje Rezerwacje Page */
+  .rezerwacje-container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  }
+  
+  .rezerwacje-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  }
+  
+  .rezerwacje-container th,
+  .rezerwacje-container td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .rezerwacje-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  }
+  
+  /* Opis Pokoju Page */
+  .opis {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  }
+  
+  .opis table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  }
+  
+  .opis th,
+  .opis td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .opis th {
+  background-color: #345995;
+  color: #ffffff;
+  }
+  
+  .opis tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+  
+  #cena {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  }
+  
+  .form_cena label {
+  display: block;
+  margin-bottom: 10px;
+  color: #345995;
+  }
+  
+  .form_cena input[type="date"],
+  .form_cena input[type="number"],
+  .form_cena input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  }
+  
+  .form_cena input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #345995;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  .tabela_cena {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  }
+  
+  .tabela_cena th,
+  .tabela_cena td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .tabela_cena th {
+  background-color: #87bdd8;
+  color: #ffffff;
+  }
+  
+  .tabela_cena tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+  
+  .rezerwuj {
+  margin: 20px;
+  text-align: center;
+  }
+  
+  .rezerwuj input[type="submit"] {
+  width: 200px;
+  padding: 10px;
+  background-color: #345995;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  /* Admin Panel Page */
+  .opis {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  }
+  
+  .opis table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  }
+  
+  .opis th,
+  .opis td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .opis th {
+  background-color: #345995;
+  color: #ffffff;
+  }
+  
+  .opis tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+  
+  [name="uprawnienia"],
+  [name="metody_platnosci"],
+  [name="rezerwacje"] {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  }
+  
+  [name="uprawnienia"] label,
+  [name="metody_platnosci"] label,
+  [name="rezerwacje"] th {
+  display: block;
+  margin-bottom: 10px;
+  color: #345995;
+  }
+  
+  [name="uprawnienia"] select,
+  [name="metody_platnosci"] input[type="text"],
+  [name="rezerwacje"] input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  }
+  
+  footer {
+  text-align: center;
+  margin-top: 20px;
+  }
+//////////////////////////
