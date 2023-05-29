@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1>Hotelik u Henia</h1>
+        <h1>Sleepscape</h1>
         <nav>
             <a href="login.html">Wyloguj</a> 
             <a href="main.html">Strona Główna</a>
@@ -20,9 +20,6 @@
     </header>
 
     <div class="opis">
-        <figure>
-            <img src="" alt=""> <!-- jakos php chyba da sie zrobic zeby nazwa szukanego pliku zmieniła sie z obraz1.jpg na obraz2.jpg -->
-        </figure>
         <table>
             <tr>
                 <th>Pokój</th>
@@ -38,6 +35,7 @@
     </div>
 
     <div id="cena">
+        <form class="form_cena">
             <label for="poczatek">Data przyjazdu:</label>
             <input type="date" name="poczatek">
 
@@ -53,7 +51,7 @@
             <input type="submit" value="Sprawdź Cenę!" name="submit" id="button">
         </form>
 
-        <table>
+        <table class="tabela_cena">
             <tr>
                 <th>HotelNazwa</th>
                 <th>Liczba dni</th>
