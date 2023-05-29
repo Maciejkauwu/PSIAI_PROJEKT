@@ -1,244 +1,353 @@
-/*
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333333;
-}
-
-.container {
-  max-width: 1200px;
+  }
+  
+  .container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  }
+  
+  header {
+  background-color: #001a33;
+  color: #fff;
+  padding: 20px;
+  }
+  
+  nav {
+  margin-top: 10px;
+  }
+  
+  nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  }
+  
+  footer {
+  background-color: #001a33;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  }
+  
+  /* Login Page */
+  .login-container {
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #345995;
-}
-
-a {
-  color: #345995;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-header {
-  background-color: #345995;
-  padding: 20px;
-}
-
-h1 {
-  font-size: 24px;
-  color: #ffffff;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  margin-right: 10px;
-  color: #ffffff;
-}
-
-form {
+  background-color: #f2f2f2;
+  border-radius: 5px;
   margin-bottom: 20px;
-}
-
-label {
+  }
+  
+  .login-container h2 {
+  margin-bottom: 20px;
+  }
+  
+  .login-container label {
   display: block;
   margin-bottom: 5px;
-  color: #345995;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"],
-select {
+  }
+  
+  .login-container input[type="email"],
+  .login-container input[type="password"] {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #345995;
-  border-radius: 4px;
-}
-
-input[type="submit"] {
-  background-color: #345995;
-  color: #ffffff;
-  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  }
+  
+  .login-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #001a33;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 3px;
   cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #203e5f;
-}
-
-
-table {
+  }
+  
+  /* Main Page */
+  .container_main {
+  margin: 20px auto;
+  max-width: 600px;
+  }
+  
+  .container_main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .container_main form label {
+  display: block;
+  margin-bottom: 10px;
+  }
+  
+  .container_main form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  }
+  
+  .container_main form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #001a33;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+  
+  .tabela_main {
+  margin-top: 20px;
+  }
+  
+  .tabela_main table {
   width: 100%;
   border-collapse: collapse;
+  }
+  
+  .tabela_main th,
+  .tabela_main td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .tabela_main th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  }
+  
+  .container_main input[type="submit"] {
+  margin-top: 10px;
+  }
+  
+  /* Signup Page */
+  .signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
   margin-bottom: 20px;
-}
-
-th,
-td {
+  }
+  
+  .signup-container h2 {
+  margin-bottom: 20px;
+  }
+  
+  .signup-container label {
+  display: block;
+  margin-bottom: 5px;
+  }
+  
+  .signup-container input[type="text"],
+  .signup-container input[type="email"],
+  .signup-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  }
+  
+  .signup-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #001a33;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  }
+  
+  /* Twoje Rezerwacje Page */
+  .rezerwacje-container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  }
+  
+  .rezerwacje-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  }
+  
+  .rezerwacje-container th,
+  .rezerwacje-container td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .rezerwacje-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  }
+  
+  /* Opis Pokoju Page */
+  .opis {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  }
+  
+  .opis table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  }
+  
+  .opis th,
+  .opis td {
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #345995;
-}
-
-th {
-  background-color: #87bdd8;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .opis th {
+  background-color: #345995;
   color: #ffffff;
-}
-
-tr:nth-child(even) {
+  }
+  
+  .opis tr:nth-child(even) {
   background-color: #f2f2f2;
-}
-
-footer {
-  background-color: #345995;
-  padding: 20px;
+  }
+  
+  #cena {
+  max-width: 600px;
+  margin: 20px auto;
   text-align: center;
-}
-
-footer p {
-  color: #ffffff;
-}
-*/
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333333;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #345995;
-}
-
-a {
-  color: #345995;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Header Styles */
-header {
-  background-color: #345995;
-  padding: 20px;
-  text-align: center; /* Center the contents */
-}
-
-h1 {
-  font-size: 24px;
-  color: #ffffff;
-}
-
-nav {
-  margin-top: 10px;
-  text-align: center; /* Center the contents */
-}
-
-nav a {
-  margin-right: 10px;
-  color: #ffffff;
-}
-
-/* Form Styles */
-form {
-  margin-bottom: 20px;
-  text-align: center; /* Center the contents */
-}
-
-label {
+  }
+  
+  .form_cena label {
   display: block;
-  margin-bottom: 5px;
-  color: #345995;
-}
-
-input[type="email"],
-input[type="password"],
-select {
-  width: 100%;
-  padding: 8px;
   margin-bottom: 10px;
-  border: 1px solid #345995;
+  color: #345995;
+  }
+  
+  .form_cena input[type="date"],
+  .form_cena input[type="number"],
+  .form_cena input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
   border-radius: 4px;
-}
-
-input[type="submit"] {
+  border: 1px solid #ccc;
+  }
+  
+  .form_cena input[type="submit"] {
+  width: 100%;
+  padding: 10px;
   background-color: #345995;
   color: #ffffff;
-  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  display: block;
-  margin: 0 auto; /* Center the button */
-}
-
-input[type="submit"]:hover {
-  background-color: #203e5f;
-}
-
-/* Table Styles */
-table {
+  }
+  
+  .tabela_cena {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
-  text-align: center; /* Center the contents */
-}
-
-th,
-td {
+  margin-top: 20px;
+  }
+  
+  .tabela_cena th,
+  .tabela_cena td {
   padding: 10px;
-  text-align: center; /* Center the contents */
-  border-bottom: 1px solid #345995;
-}
-
-th {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .tabela_cena th {
   background-color: #87bdd8;
   color: #ffffff;
-}
-
-tr:nth-child(even) {
+  }
+  
+  .tabela_cena tr:nth-child(even) {
   background-color: #f2f2f2;
-}
-
-/* Footer Styles */
-footer {
-  background-color: #345995;
-  padding: 20px;
+  }
+  
+  .rezerwuj {
+  margin: 20px;
   text-align: center;
-}
-
-footer p {
+  }
+  
+  .rezerwuj input[type="submit"] {
+  width: 200px;
+  padding: 10px;
+  background-color: #345995;
   color: #ffffff;
-}
-
-/* Custom Styles */
-.login-container {
-  width: 400px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  /* Admin Panel Page */
+  .opis {
+  max-width: 960px;
   margin: 0 auto;
-}
-
-.filler,
-.filler2 {
-  height: 100px;
-}
+  text-align: center;
+  }
+  
+  .opis table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  }
+  
+  .opis th,
+  .opis td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .opis th {
+  background-color: #345995;
+  color: #ffffff;
+  }
+  
+  .opis tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+  
+  [name="uprawnienia"],
+  [name="metody_platnosci"],
+  [name="rezerwacje"] {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+  }
+  
+  [name="uprawnienia"] label,
+  [name="metody_platnosci"] label,
+  [name="rezerwacje"] th {
+  display: block;
+  margin-bottom: 10px;
+  color: #345995;
+  }
+  
+  [name="uprawnienia"] select,
+  [name="metody_platnosci"] input[type="text"],
+  [name="rezerwacje"] input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  }
+  
+  footer {
+  text-align: center;
+  margin-top: 20px;
+  }
