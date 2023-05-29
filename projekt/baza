@@ -1,0 +1,46 @@
+CREATE DATABASE Hotel;
+USE Hotel;
+
+CREATE TABLE pokoj (
+  id_pokoju INT PRIMARY KEY,
+  cena DECIMAL(10, 2),
+  lozka INT,
+  metry_kwadratowe DECIMAL(5, 2),
+  zwierzeta BOOLEN;
+  numer_pokoju VARCHAR(10)
+);
+
+CREATE TABLE rezerwacja (
+  id_rezerwacji INT PRIMARY KEY,
+  data_przyjazdu DATE,
+  data_odjazdu DATE,
+  id_pokoju INT,
+  koszt DECIMAL(10, 2),
+  FOREIGN KEY (id_pokoju) REFERENCES pokoj (id_pokoju)
+);
+
+CREATE TABLE platnosc (
+  id_platnosci INT PRIMARY KEY,
+  koszt DECIMAL(10, 2),
+  platnosc VARCHAR(20),
+  FOREIGN KEY (id_platnosci) REFERENCES rezerwacja (id_rezerwacji)
+);
+
+CREATE TABLE user (
+  id_konta INT PRIMARY KEY,
+  email VARCHAR(20),
+  haslo VARCHAR(20),
+  date_of_birth DATE
+);
+
+CREATE TABLE zarezerwowano (
+  id_rezerwacji INT PRIMARY KEY,
+  id_pokoju INT,
+  id_konta INT,
+  mozliwosc_pobytu_ze_zwierzetami VARCHAR(3),
+  data_przyjazdu DATE,
+  data_odjazdu DATE,
+  FOREIGN KEY (id_rezerwacji) REFERENCES rezerwacja (id_rezerwacji),
+  FOREIGN KEY (id_pokoju) REFERENCES pokoj (id_pokoju),
+  FOREIGN KEY (id_konta) REFERENCES login (id_konta)
+); 
