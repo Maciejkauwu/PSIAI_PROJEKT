@@ -1,0 +1,15 @@
+Opis, czego dotyczy projekt:|
+
+Sleepscape-Wyszukiwarka pokoi do wynajęcia.
+Lider: Wiktoria Kruk PHP
+Pracownik: Maciej Korowacki HTML
+Stażysta: Mateusz Kot CSS
+Praktykant: Cyprian Głowacki SQL
+
+Nasz projekt służy do wyszukiwania pokoi na wynajem. Aby dostać się na stronę, trzeba najpierw się zalogować lub założyć konto. 
+Gdy już wszystkie formalności będą skończone, użytkownik zostaje przeniesiony na stronę główną. 
+Na stronie głównej można przenieść się do podstron, takich jak "Twoje rezerwacje", oraz do wylogowania. 
+Strona główna wyświetla tabele z pokojami, ceną i dostępnością. Znajduje się tam również formularz rezerwacji. 
+Po naciśnięciu przycisku "rezerwuj" użytkownik zostaje przeniesiony do podstrony z płatnościami. 
+Po "zrealizowaniu" płatności, wyświetli się komunikat, że pokój został zarezerwowany. 
+W tabelce znajduje się również odnośnik do podstrony z informacjami o pokoju.
