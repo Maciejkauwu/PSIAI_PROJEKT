@@ -49,6 +49,7 @@
             }
 
             echo "</table>"
+?>
     </div>
 
     <div id="cena">
