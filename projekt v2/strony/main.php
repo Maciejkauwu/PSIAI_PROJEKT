@@ -60,6 +60,7 @@
             }
 
             echo "</table>"
+?>
     </div>
     <footer>
         <p>&copy; 2023 Sleepscape.</p>
